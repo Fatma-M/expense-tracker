@@ -4,7 +4,7 @@ import "./ExpenseItem.css";
 
 function ExpenseItem({ item }) {
   return (
-    <>
+    <li>
       <Card className="expense-item">
         <ExpenseDate date={item.date} />
         <div className="expense-item__description">
@@ -12,7 +12,7 @@ function ExpenseItem({ item }) {
           <div className="expense-item__price">${item.amount}</div>
         </div>
       </Card>
-    </>
+    </li>
   );
 }
 export default ExpenseItem;
